@@ -1,0 +1,317 @@
+/*---------------------------------------------------------body -general settings -----------------------------------------------------*/
+
+body
+{
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 2em; 
+    font-size:17px; 
+}
+
+/*---------------------------------------------------------- main - box ---------------------------------------------------------------*/
+
+.border
+{
+position: relative;
+height: 100%;
+width: 100%;
+background-color: #ffffff;
+border: 0.7em solid #ffe4e1;
+margin: auto;
+box-sizing: border-box;
+}
+
+/*-------------------------------------------------------------profile photo-----------------------------------------------------------*/
+
+.photo{
+  position: absolute;
+  z-index: 3;
+  width: 11.5em;
+  height: 11.5em;
+  border: 0.4em solid #ffffff;
+  border-radius: 13em;
+  -webkit-border-radius: 13em;
+  -moz-border-radius: 13em;
+  background-image: url(images/face1.jpg);
+  background-position: center;
+  background-size: cover;
+  top: 0.9%;
+  left: -12%;
+}
+
+/*---------------------------------------------------------navigation header------------------------------------------------------------*/
+
+@import "compass/css3";
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  background: #ffe4e1;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+}
+.navigation div {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+  }
+
+.navigation a:hover {
+  background: darken(#ffe4e1, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation  { 
+    text-align: center; 
+    padding: 2%; 
+  }
+
+  
+  .navigation li:last-of-type  {
+    border-bottom: none;
+  }
+}
+/*---------------------------------------------------------boarder structure -----------------------------------------------------------*/
+.wrapper {
+    display: flex;
+    position: relative; 
+    flex-wrap:nowrap;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .wrapper > * {
+    padding: 0.5em;
+    flex: 1 100%;
+  }
+  
+  .header {
+    position: relative; 
+    background: #ffffff;
+  }
+  
+  .footer {
+    position: relative; 
+    background: #f5fffa;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom:0.5em;
+  }
+
+  .pokaz{
+    display:flex;
+    position: relative; 
+    flex-direction:column;
+    margin-right: 0.5em;
+    text-align: left;
+    background:#ffffff;
+  }
+  .main {
+    display:flex;
+    min-height: 28%;
+    min-width:100%;
+    text-align: center;
+    position: relative; 
+    background-color: #fff8dc;
+    color: #CD5C5C;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .main1{
+    display:flex;
+    position: relative; 
+    text-align: left;
+    flex-direction:column;
+    justify-content: center;
+    margin: 0.5em;
+    
+  }
+
+  .aside 
+  {
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    position: relative;  
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    color: #ffffff;;
+    background-color: #ffe4e1;
+    font-family: 'Raleway', sans-serif;
+    justify-content: flex-start;
+  }
+
+  @media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .pokaz    { flex: 3 0px; }
+    .aside { order: 1;} 
+    .pokaz    { order: 2;}
+    .footer  { order: 3;}
+  }
+  /*---------------------------------------------------------main structure -----------------------------------------------------------*/
+.edu
+{
+  text-align:center;
+  margin: 6% 14% 0% 14%;
+}
+.tekst1  
+{
+  text-align:center;
+  margin: 1% 14% 6% 14%;
+}
+
+  .insta-icon
+  {
+    display: block;
+    bottom: 3%; 
+    left: 93%;
+    position:absolute;
+    margin-right:2%;
+    font-size: 2em;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+  .face-icon
+  {
+    display: block;
+    bottom: 3%;
+    left: 86%;
+    position:absolute;
+    margin-right:2%;
+    font-size: 2em;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+  .git-icon
+  {
+    display: block;
+    bottom: 3%;
+    left: 79%;
+    position:absolute;
+    margin-right:2%;
+    font-size: 2em;
+    text-decoration: none;
+    color: #CD5C5C;
+  }
+
+/*------------------------------------------------------------main-1 structure -----------------------------------------------------------*/
+.empty
+{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    min-height: 10vh;
+    
+     
+}
+.study
+{
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    border-top: 3px solid #ffe4e1;
+    min-height: 20vh;
+}
+
+.date
+{
+    display: flex;
+    position:relative;
+    border-right: 3px solid #ffe4e1;
+    flex-grow: 5;
+    max-width: 30vh;
+    font-family: 'Raleway', sans-serif;
+    color: #CD5C5C;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; 
+}
+.info
+{
+    display: flex;
+    position:relative;
+    flex-grow: 8;
+    max-width:100%;
+    font-family: 'Raleway', sans-serif; 
+    color: #CD5C5C;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    white-space: wrap;
+	  overflow: hidden;
+    text-overflow: ellipsis;
+}
+.note
+{
+    display: flex;
+    position:relative;
+    margin-left: 5vh;
+    white-space: nowrap;
+}
+
+
+/*---------------------------------------------------------aside structure -----------------------------------------------------------*/
+
+.get
+{
+  display:block;
+  position: relative;
+  color: #ffffff;
+  font-size:1.8em;;
+  top:23%;
+  font-family: 'Raleway', sans-serif;
+}
+.mylist
+{
+  display:block;
+  position: relative;
+  top:23%;
+}
+.links{
+    display:flex;
+    color: #ffffff;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:1.2em;
+    margin-bottom:0.5em;
+}
+
+.links:hover
+{
+    text-decoration: underline;
+} 
